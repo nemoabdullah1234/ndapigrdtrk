@@ -1,0 +1,11 @@
+defaults:
+  stage: api
+  role: arn:aws:iam::012179919676:role/guardtrak-LambdaExecutionRole
+  region: eu-west-1
+  memorySize: 512
+  deploymentBucketName: slsdeploy-guardtrak
+  versionFunctions: true
+  timeout: 30
+  prefix: ak-guardtrak- 
+  
+authrizer: ak-common-authorizer
